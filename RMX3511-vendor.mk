@@ -841,7 +841,6 @@ PRODUCT_PACKAGES += \
     libaudiomiscctl \
     libavservices_minijail_vendor \
     libbqbbt \
-    libcodec2_hidl_plugin \
     libcodec2_unisoc_av1dec \
     libcodec2_unisoc_avcdec \
     libcodec2_unisoc_avcdec_secure \
