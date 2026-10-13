@@ -648,7 +648,6 @@ PRODUCT_PACKAGES += \
     libdav1d_rmx3511 \
     libdeflicker \
     libdfa \
-    libeffects \
     libfaceanalyze \
     libfaceid_ca \
     libfacepose \
@@ -792,7 +791,6 @@ PRODUCT_PACKAGES += \
     libteec \
     libteecPlatform \
     libteeproduction \
-    libtinycompress \
     libtrustyHalHelper \
     libumnn \
     libunnengine \
@@ -900,8 +898,6 @@ PRODUCT_PACKAGES += \
     libkeymaster_messages_rmx3511 \
     libkeymaster_portable_rmx3511 \
     libkeymint_rmx3511 \
-    libkeystore-engine-wifi-hidl \
-    libkeystore-wifi-hidl \
     libliom \
     libpuresoftkeymasterdevice_rmx3511 \
     libremosaiclib \
