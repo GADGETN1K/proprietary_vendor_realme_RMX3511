@@ -1,5 +1,4 @@
 service vendor.sprd.hardware.aprd@1.0-service /vendor/bin/hw/vendor.sprd.hardware.aprd@1.0-service
-    interface vendor.sprd.hardware.aprd@1.0::IAprdInfoSync default
     class hal
     user system
     group system
