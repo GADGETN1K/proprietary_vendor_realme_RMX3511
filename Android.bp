@@ -1655,6 +1655,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/camera.ums9230.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "liblog",
                 "libxml2",
                 "libmempool",
@@ -1731,6 +1732,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/camera.ums9230.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "liblog",
                 "libxml2",
                 "libmempool",
@@ -2133,6 +2135,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/hwcomposer.ums9230.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "liblog",
                 "libEGL",
                 "libmemion",
@@ -2162,6 +2165,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/hwcomposer.ums9230.so",
             ],
             shared_libs: [
+                "libui_shim",
                 "liblog",
                 "libEGL",
                 "libmemion",
