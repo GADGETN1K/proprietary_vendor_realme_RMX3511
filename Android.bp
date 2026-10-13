@@ -1373,6 +1373,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/android.hardware.graphics.allocator@4.0-impl-arm.so",
             ],
             shared_libs: [
+                "libbase_shim_rmx3511",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
                 "libhardware",
@@ -1398,6 +1399,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.graphics.allocator@4.0-impl-arm.so",
             ],
             shared_libs: [
+                "libbase_shim_rmx3511",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
                 "libhardware",
@@ -1437,6 +1439,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/android.hardware.graphics.mapper@4.0-impl-arm.so",
             ],
             shared_libs: [
+                "libbase_shim_rmx3511",
                 "arm.graphics-V2-ndk_platform",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
@@ -1462,6 +1465,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/android.hardware.graphics.mapper@4.0-impl-arm.so",
             ],
             shared_libs: [
+                "libbase_shim_rmx3511",
                 "arm.graphics-V2-ndk_platform",
                 "android.hardware.graphics.common@1.2",
                 "libbase",
