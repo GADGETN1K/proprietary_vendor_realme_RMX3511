@@ -65,6 +65,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/build_TR_3624.prop:$(TARGET_COPY_OUT_VENDOR)/build_TR_3624.prop \
     vendor/realme/RMX3511/proprietary/vendor/build_TR_3627.prop:$(TARGET_COPY_OUT_VENDOR)/build_TR_3627.prop \
     vendor/realme/RMX3511/proprietary/vendor/build_TR_RSA4_3624.prop:$(TARGET_COPY_OUT_VENDOR)/build_TR_RSA4_3624.prop \
+    vendor/realme/RMX3511/proprietary/vendor/etc/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/adb.iso:$(TARGET_COPY_OUT_VENDOR)/etc/adb.iso \
     vendor/realme/RMX3511/proprietary/vendor/etc/analyzer.py:$(TARGET_COPY_OUT_VENDOR)/etc/analyzer.py \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio/sku_sprd/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sprd/audio_policy_configuration.xml \
@@ -76,6 +77,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio/sku_sprd/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sprd/primary_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio/sku_sprd/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sprd/r_submix_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio/sku_sprd/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sprd/usb_audio_policy_configuration.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_config.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_pga.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_pga.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_process.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_process.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_structure.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_structure.xml \
@@ -83,13 +87,25 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/codec.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/codec.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/cvs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/cvs.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/dsp_vbc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/dsp_vbc.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_pcm.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_pcm.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_apm_configuration_configurable.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_apm_configuration_configurable.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_configuration_a2dp_offload_disabled.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_a2dp_offload_disabled.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_configuration_bluetooth_legacy_hal.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration_bluetooth_legacy_hal.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_engine_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_configuration.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_engine_criterion_types.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_criterion_types.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_engine_default_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_default_stream_volumes.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_engine_product_strategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_product_strategies.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_engine_stream_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_engine_stream_volumes.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/audio_route.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_route.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/blackAppList.xml:$(TARGET_COPY_OUT_VENDOR)/etc/blackAppList.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/bluetooth_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/bluetooth_audio_policy_configuration_disable_offload.xml:$(TARGET_COPY_OUT_VENDOR)/etc/bluetooth_audio_policy_configuration_disable_offload.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/camera/engineer_camera_config:$(TARGET_COPY_OUT_VENDOR)/etc/camera/engineer_camera_config \
     vendor/realme/RMX3511/proprietary/vendor/etc/config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/config.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/cp_dump_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/cp_dump_info.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/deviceidle.xml:$(TARGET_COPY_OUT_VENDOR)/etc/deviceidle.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/dirac/diracmobile.config:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/diracmobile.config \
     vendor/realme/RMX3511/proprietary/vendor/etc/dirac/diracvdd.bin:$(TARGET_COPY_OUT_VENDOR)/etc/dirac/diracvdd.bin \
@@ -124,20 +140,14 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/enhance/lcd_ili9882q_txd_mipi_hd_dci.xml:$(TARGET_COPY_OUT_VENDOR)/etc/enhance/lcd_ili9882q_txd_mipi_hd_dci.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/fm.conf:$(TARGET_COPY_OUT_VENDOR)/etc/fm.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/imsUserAgent.xml:$(TARGET_COPY_OUT_VENDOR)/etc/imsUserAgent.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.audio.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.audio.service.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.biometrics.fingerprint@2.1-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.bluetooth@1.1-service.unisoc.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.camera.provider@2.4-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.camera.provider@2.4-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.drm@1.4-service.widevine.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.drm@1.4-service.widevine.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.gatekeeper@1.0-service.trusty.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.graphics.allocator@4.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.allocator@4.0-service.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.graphics.composer@2.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.graphics.composer@2.1-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.media.c2@1.1-unisoc-service.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.nfc@1.2-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.nfc@1.2-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.security.keymint@1.0-unisoc.service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.security.keymint@1.0-unisoc.service.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.sensors@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.sensors@1.0-service.rc \
+    vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.usb@1.1-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.usb@1.1-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/android.hardware.wifi@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/android.hardware.wifi@1.0-service.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/boringssl_self_test.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/boringssl_self_test.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/charge.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/charge.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/charged.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/charged.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/connmgr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/connmgr.rc \
@@ -152,8 +162,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/memtrack.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/memtrack.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/modem_control.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/modem_control.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/phasecheckserver.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/phasecheckserver.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/power.stats-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/power.stats-default.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/rebootescrow-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rebootescrow-default.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/refnotify.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/refnotify.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/rpmbserver_androidr.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/rpmbserver_androidr.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/slogmodem_vendor.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/slogmodem_vendor.rc \
@@ -182,21 +190,26 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor.sprd.hardware.trusty@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.trusty@1.0-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor.sprd.hardware.wcn@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.wcn@1.0-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor_engineermode.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_engineermode.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor_flash_recovery.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor_flash_recovery.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vibrator.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vibrator.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/wcn.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/wcn.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/libnfc-nci.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nci.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/libnfc-nxp_RF.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/lmkd_param.conf:$(TARGET_COPY_OUT_VENDOR)/etc/lmkd_param.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/log_settings.xml:$(TARGET_COPY_OUT_VENDOR)/etc/log_settings.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_c2.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs_google_audio.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_audio.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs_google_telephony.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_google_telephony.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs_performance.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_codecs_performance_c2.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_codecs_performance_c2.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/media_profiles_turnkey.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_turnkey.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/models/mnasnet:$(TARGET_COPY_OUT_VENDOR)/etc/models/mnasnet \
     vendor/realme/RMX3511/proprietary/vendor/etc/models/mnasnet_1.3_224.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/models/mnasnet_1.3_224.tflite \
     vendor/realme/RMX3511/proprietary/vendor/etc/models/mnasnet_1.3_224.txt:$(TARGET_COPY_OUT_VENDOR)/etc/models/mnasnet_1.3_224.txt \
     vendor/realme/RMX3511/proprietary/vendor/etc/modem_cp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_cp_info.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/modem_sp_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/modem_sp_info.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/nfc/nicky/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/nicky/libnfc-nxp.conf \
-    vendor/realme/RMX3511/proprietary/vendor/etc/nfc/nicky/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/nicky/libnfc-nxp_RF.conf \
-    vendor/realme/RMX3511/proprietary/vendor/etc/nfc/nico/libnfc-nxp.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/nico/libnfc-nxp.conf \
-    vendor/realme/RMX3511/proprietary/vendor/etc/nfc/nico/libnfc-nxp_RF.conf:$(TARGET_COPY_OUT_VENDOR)/etc/nfc/nico/libnfc-nxp_RF.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/numeric_operator.xml:$(TARGET_COPY_OUT_VENDOR)/etc/numeric_operator.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/nvmerge.cfg:$(TARGET_COPY_OUT_VENDOR)/etc/nvmerge.cfg \
     vendor/realme/RMX3511/proprietary/vendor/etc/otpdata/input_parameters_values.txt:$(TARGET_COPY_OUT_VENDOR)/etc/otpdata/input_parameters_values.txt \
@@ -210,11 +223,7 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/otpdata/spw_input_parameters_values_planar.txt:$(TARGET_COPY_OUT_VENDOR)/etc/otpdata/spw_input_parameters_values_planar.txt \
     vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/ParameterFrameworkConfigurationPolicy.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Settings/Policy/PolicyConfigurableDomains.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/Structure/Policy/PolicyClass.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/PolicyClass.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/Structure/Policy/PolicySubsystem-CommonTypes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/PolicySubsystem-CommonTypes.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/Structure/Policy/PolicySubsystem.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/PolicySubsystem.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/parameter-framework/Structure/Policy/ProductStrategies.xml:$(TARGET_COPY_OUT_VENDOR)/etc/parameter-framework/Structure/Policy/ProductStrategies.xml \
-    vendor/realme/RMX3511/proprietary/vendor/etc/permissions/android.hardware.hardware_keystore.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.hardware_keystore.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/permissions/android.hardware.keystore.app_attest_key.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.keystore.app_attest_key.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/power_info.db:$(TARGET_COPY_OUT_VENDOR)/etc/power_info.db \
     vendor/realme/RMX3511/proprietary/vendor/etc/power_resource_file_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_resource_file_info.xml \
@@ -222,7 +231,9 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/power_scene_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_config.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/power_scene_id_define.txt:$(TARGET_COPY_OUT_VENDOR)/etc/power_scene_id_define.txt \
     vendor/realme/RMX3511/proprietary/vendor/etc/primary_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/primary_audio_policy_configuration.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/public.libraries.txt:$(TARGET_COPY_OUT_VENDOR)/etc/public.libraries.txt \
     vendor/realme/RMX3511/proprietary/vendor/etc/pwctl_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/pwctl_config.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/r_submix_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/r_submix_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/res/images/colon_1080X1920.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_1080X1920.png \
     vendor/realme/RMX3511/proprietary/vendor/etc/res/images/colon_1440X2560.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_1440X2560.png \
     vendor/realme/RMX3511/proprietary/vendor/etc/res/images/colon_360X640.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/colon_360X640.png \
@@ -349,6 +360,8 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/res/images/number_percent_480X800.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_480X800.png \
     vendor/realme/RMX3511/proprietary/vendor/etc/res/images/number_percent_720X1280.png:$(TARGET_COPY_OUT_VENDOR)/etc/res/images/number_percent_720X1280.png \
     vendor/realme/RMX3511/proprietary/vendor/etc/scenario.conf:$(TARGET_COPY_OUT_VENDOR)/etc/scenario.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/android.hardware.media.c2@1.1-unisoc-seccomp_policy \
+    vendor/realme/RMX3511/proprietary/vendor/etc/seccomp_policy/mediaextractor.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/mediaextractor.policy \
     vendor/realme/RMX3511/proprietary/vendor/etc/sensor_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/sensor_config.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/slog_modem.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/slog_modem_cali.conf:$(TARGET_COPY_OUT_VENDOR)/etc/slog_modem_cali.conf \
@@ -361,7 +374,11 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/tf_models/PortraitSegHP.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/tf_models/PortraitSegHP.tflite \
     vendor/realme/RMX3511/proprietary/vendor/etc/tf_models/PortraitSegLP.tflite:$(TARGET_COPY_OUT_VENDOR)/etc/tf_models/PortraitSegLP.tflite \
     vendor/realme/RMX3511/proprietary/vendor/etc/thermal.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/ueventd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/ueventd.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/uniber.conf:$(TARGET_COPY_OUT_VENDOR)/etc/uniber.conf \
+    vendor/realme/RMX3511/proprietary/vendor/etc/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/vendor_hals/unisoc_wifi_hal_arm64.xml \
+    vendor/realme/RMX3511/proprietary/vendor/etc/wifi/wpa_supplicant.conf:$(TARGET_COPY_OUT_VENDOR)/etc/wifi/wpa_supplicant.conf \
     vendor/realme/RMX3511/proprietary/vendor/etc/wifisar.xml:$(TARGET_COPY_OUT_VENDOR)/etc/wifisar.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/zoom_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/zoom_config.json \
     vendor/realme/RMX3511/proprietary/vendor/firmware/Conf_MultipleTest_Truly_fts8006saa.ini:$(TARGET_COPY_OUT_VENDOR)/firmware/Conf_MultipleTest_Truly_fts8006saa.ini \
@@ -493,111 +510,59 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/logo/time_vert_74x44x13_pic_size_8160x6144_74x572.yuv:$(TARGET_COPY_OUT_VENDOR)/logo/time_vert_74x44x13_pic_size_8160x6144_74x572.yuv \
     vendor/realme/RMX3511/proprietary/vendor/logo/time_vert_76x42x13_pic_size_4000x3000_76x546.yuv:$(TARGET_COPY_OUT_VENDOR)/logo/time_vert_76x42x13_pic_size_4000x3000_76x546.yuv \
     vendor/realme/RMX3511/proprietary/vendor/logo/time_vert_76x42x13_pic_size_4096x3072_76x546.yuv:$(TARGET_COPY_OUT_VENDOR)/logo/time_vert_76x42x13_pic_size_4096x3072_76x546.yuv \
-    vendor/realme/RMX3511/proprietary/vendor/resources.arsc:$(TARGET_COPY_OUT_VENDOR)/resources.arsc
+    vendor/realme/RMX3511/proprietary/vendor/resources.arsc:$(TARGET_COPY_OUT_VENDOR)/resources.arsc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/adaptive_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/adaptive_ts.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/focaltech_ats.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ats.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/focaltech_spi_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_spi_ts.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/focaltech_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/focaltech_ts.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/madev.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/madev.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/msg2138_ts.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/msg2138_ts.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/synaptics_dsx.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/idc/synaptics_dsx_i2c.idc:$(TARGET_COPY_OUT_VENDOR)/usr/idc/synaptics_dsx_i2c.idc \
+    vendor/realme/RMX3511/proprietary/vendor/usr/keylayout/adaptive_ts.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/adaptive_ts.kl \
+    vendor/realme/RMX3511/proprietary/vendor/usr/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
+    vendor/realme/RMX3511/proprietary/vendor/usr/keylayout/madev.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/madev.kl
 
 PRODUCT_PACKAGES += \
     MemsicAlgo \
     anc.hal \
-    android.frameworks.cameraservice.common@2.0 \
-    android.frameworks.cameraservice.device@2.0 \
-    android.frameworks.cameraservice.device@2.1 \
-    android.frameworks.cameraservice.service@2.0 \
-    android.frameworks.cameraservice.service@2.1 \
-    android.frameworks.cameraservice.service@2.2 \
-    android.frameworks.sensorservice@1.0 \
-    android.hardware.audio.common-util \
-    android.hardware.audio.common@5.0 \
-    android.hardware.audio.common@7.0-enums \
-    android.hardware.audio.common@7.0-util \
-    android.hardware.audio.common@7.0 \
-    android.hardware.audio.effect@7.0-util \
-    android.hardware.audio.effect@7.0 \
-    android.hardware.audio@7.0-util \
-    android.hardware.audio@7.0 \
-    android.hardware.bluetooth.audio@2.0 \
-    android.hardware.bluetooth.audio@2.1 \
-    android.hardware.boot@1.0 \
-    android.hardware.boot@1.1 \
-    android.hardware.boot@1.2 \
-    android.hardware.broadcastradio@1.0 \
-    android.hardware.camera.common@1.0 \
-    android.hardware.camera.device@1.0 \
-    android.hardware.camera.device@3.2 \
-    android.hardware.camera.device@3.3 \
-    android.hardware.camera.device@3.4 \
-    android.hardware.camera.device@3.5 \
-    android.hardware.camera.device@3.6 \
     android.hardware.camera.provider@2.4-external-sprd \
     android.hardware.camera.provider@2.4-legacy-sprd \
-    android.hardware.camera.provider@2.4 \
-    android.hardware.drm@1.0 \
-    android.hardware.drm@1.1 \
-    android.hardware.drm@1.2 \
-    android.hardware.drm@1.3 \
-    android.hardware.drm@1.4 \
-    android.hardware.gnss.measurement_corrections@1.0 \
-    android.hardware.gnss.measurement_corrections@1.1 \
-    android.hardware.gnss.visibility_control@1.0 \
-    android.hardware.gnss@1.0 \
-    android.hardware.gnss@1.1 \
-    android.hardware.gnss@2.0 \
-    android.hardware.gnss@2.1 \
-    android.hardware.nfc@1.0 \
-    android.hardware.radio.config@1.0 \
-    android.hardware.radio.config@1.1 \
-    android.hardware.radio.config@1.2 \
-    android.hardware.radio.config@1.3 \
-    android.hardware.radio.deprecated@1.0 \
-    android.hardware.radio@1.0 \
-    android.hardware.radio@1.1 \
-    android.hardware.radio@1.2 \
-    android.hardware.radio@1.3 \
-    android.hardware.radio@1.4 \
-    android.hardware.radio@1.5 \
-    android.hardware.radio@1.6 \
-    android.hardware.secure_element@1.0 \
-    android.hardware.sensors@1.0 \
-    android.hardware.thermal@1.0 \
-    android.hardware.thermal@2.0 \
-    android.hardware.wifi@1.0 \
-    android.hidl.allocator@1.0 \
     arm.graphics-V1-ndk \
     arm.graphics-V1-ndk_platform \
     arm.graphics-V2-ndk \
     arm.graphics-V2-ndk_platform \
     audio_common-aidl-cpp \
-    audioclient-types-aidl-cpp \
-    av-types-aidl-cpp \
-    libGLES_mali \
-    framework-permission-aidl-cpp \
+    camera.device@1.0-impl \
+    camera.device@3.2-impl-sprd \
+    camera.device@3.3-impl-sprd \
+    camera.device@3.4-external-impl-sprd \
+    camera.device@3.4-impl-sprd \
+    camera.device@3.5-external-impl-sprd \
+    camera.device@3.5-impl-sprd \
+    camera.device@3.6-external-impl-sprd \
+    libGLES_mali_egl \
     android.hardware.audio.effect@7.0-impl \
     android.hardware.audio@7.0-impl \
     android.hardware.bluetooth.audio@2.1-impl \
     android.hardware.camera.provider@2.4-impl-sprd \
     android.hardware.graphics.allocator@4.0-impl-arm \
     android.hardware.graphics.mapper@4.0-impl-arm \
-    android.hardware.nfc@1.0-impl \
     android.hardware.sensors@1.0-impl \
     audio.bluetooth.default \
     audio.bluetooth.ums9230 \
-    audio.primary.default \
-    audio.r_submix.default \
-    audio.usb.default \
     camera.ums9230 \
     dpu.ums9230 \
     enhance.ums9230 \
     face.default \
     fingerprint.silead.default \
     gps.default \
-    gralloc.default \
     gsp.ums9230 \
     hwcomposer.ums9230 \
     jiiov.fingerprint.default \
     memtrack.ums9230 \
     microarray.fingerprint.default \
-    power.default \
     sensors.ums9230 \
-    thermal.default \
     unisoc.bootctrl \
     vendor.sprd.hardware.aprd@1.0-impl \
     vendor.sprd.hardware.connmgr@1.0-impl \
@@ -609,7 +574,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.thermal@2.0-impl \
     vendor.sprd.hardware.trusty@1.0-impl \
     vendor.sprd.hardware.wcn@1.0-impl \
-    vibrator.default \
     vibrator.ums9230 \
     libBokeh2Frames \
     libDefog \
@@ -643,8 +607,6 @@ PRODUCT_PACKAGES += \
     libarcsoft_supernight \
     libatci \
     libatm \
-    libaudioclient_aidl_conversion \
-    libaudiofoundation \
     libaudionpi \
     libavcodec-58 \
     libavutil-56 \
@@ -659,7 +621,7 @@ PRODUCT_PACKAGES += \
     libbokeh_gaussian_cap \
     libbt-sprd_suite \
     libbt-ssp_bt \
-    libbt-vendor \
+    libbt-vendor_rmx3511 \
     libcam_ipmpro \
     libcam_otp_parser \
     libcambr \
@@ -681,14 +643,14 @@ PRODUCT_PACKAGES += \
     libcodec2_unisoc_common \
     libcodec2_unisoc_deintl \
     libcodec2_unisoc_store \
-    libcodec2_vndk \
     libcompasshub \
     libcppdrv \
-    libdav1d \
+    libdav1d_rmx3511 \
     libdeflicker \
     libdfa \
-    libdrm \
+    libeffects \
     libfaceanalyze \
+    libfaceid_ca \
     libfacepose \
     libfaceskinseg \
     libflash \
@@ -698,8 +660,7 @@ PRODUCT_PACKAGES += \
     libgtm \
     libgyrostab \
     libhdr \
-    libhidltransport \
-    libhwbinder \
+    libhwc2on1adapter \
     libimpl-ril \
     libinfo \
     libinterface \
@@ -758,8 +719,6 @@ PRODUCT_PACKAGES += \
     libparam_sp0a09_vga \
     libpdalgo \
     libpowerhal_cli \
-    libprotobuf-cpp-full-3.9.1 \
-    libprotobuf-cpp-lite-3.9.1 \
     libremosaic_daemon \
     libril-lite \
     libril-private \
@@ -778,9 +737,6 @@ PRODUCT_PACKAGES += \
     libsensorndkbridge \
     libsensornpi \
     libsensorsdrvcfg \
-    libsfplugin_ccodec_utils \
-    libshmemcompat \
-    libshmemutil \
     libsl_fp_impl \
     libsprd_faceanalyze_adapter \
     libsprd_mfsr \
@@ -811,6 +767,7 @@ PRODUCT_PACKAGES += \
     libsprdfacebeauty \
     libsprdfacebeauty_vdsp \
     libsprdfacebeautyfdr \
+    libsprdfaceid \
     libsprdfarcnn \
     libsprdfd \
     libsprdfd_hw \
@@ -827,8 +784,7 @@ PRODUCT_PACKAGES += \
     libsprdwarpadapter \
     libsprdwarppro \
     libsprdwtadapter \
-    libstagefright_bufferpool@2.0.1 \
-    libstagefrighthw \
+    libstagefrighthw_rmx3511 \
     libsupl \
     libswresample-3 \
     libswscale-5 \
@@ -836,9 +792,7 @@ PRODUCT_PACKAGES += \
     libteec \
     libteecPlatform \
     libteeproduction \
-    libtensorflowlite_c \
     libtinycompress \
-    libtrusty \
     libtrustyHalHelper \
     libumnn \
     libunnengine \
@@ -847,13 +801,14 @@ PRODUCT_PACKAGES += \
     libvcm_gt9764 \
     libvcm_gt9778 \
     libverify \
-    libvibrator \
+    libvibrator_rmx3511 \
     libvsp_ca \
     libwcn-vendor \
     libwifi-hal-unisoc \
+    libwifi-hal \
     libyuv420_scaler \
+    libcheckkeybox \
     oemlock_ca \
-    shared-file-region-aidl-cpp \
     libaudiopreprocessing \
     libbundlewrapper2 \
     libhapticgenerator \
@@ -877,12 +832,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.trusty@1.0 \
     vendor.sprd.hardware.wcn@1.0 \
     vendor.unisoc.hardware.power-V1-ndk_platform \
-    android.hardware.cas.native@1.0 \
-    android.hardware.cas@1.0 \
-    android.hardware.cas@1.1 \
-    android.hardware.cas@1.2 \
-    android.hardware.media.c2@1.0 \
-    android.hardware.media.c2@1.1 \
     audio.primary.ums9230 \
     awinic.audio.effect \
     libsixth_core_v2 \
@@ -890,10 +839,8 @@ PRODUCT_PACKAGES += \
     libalsa_utils \
     libaudiodump \
     libaudiomiscctl \
-    libavservices_minijail \
+    libavservices_minijail_vendor \
     libbqbbt \
-    libcodec2_hidl@1.0 \
-    libcodec2_hidl@1.1 \
     libcodec2_hidl_plugin \
     libcodec2_unisoc_av1dec \
     libcodec2_unisoc_avcdec \
@@ -913,10 +860,6 @@ PRODUCT_PACKAGES += \
     libnvitem_crypto \
     liboemcrypto \
     libomx_mp3dec_sprd \
-    libopus \
-    libstagefright_amrnb_common \
-    libstagefright_enc_common \
-    libstagefright_flacdec \
     libstagefright_soft_aacdec \
     libstagefright_soft_aacenc \
     libstagefright_soft_amrdec \
@@ -939,80 +882,56 @@ PRODUCT_PACKAGES += \
     libstagefright_soft_vorbisdec \
     libstagefright_soft_vpxdec \
     libstagefright_soft_vpxenc \
-    libstagefright_softomx \
-    libstagefright_softomx_plugin \
     libstagefright_sprd_mp3dec \
     libstagefright_sprd_mp3enc \
     libunisocpreprocessing \
-    libvorbisidec \
-    libvpx \
-    libwifi-hal \
     libwvhidl \
     libdirac \
     libsprdvoiceprocessing \
-    android.hardware.biometrics.fingerprint@2.1 \
-    android.hardware.bluetooth@1.0 \
-    android.hardware.bluetooth@1.1 \
-    android.hardware.broadcastradio@2.0 \
-    android.hardware.gatekeeper@1.0 \
-    android.hardware.graphics.composer@2.1-resources \
-    android.hardware.graphics.composer@2.1 \
-    android.hardware.nfc@1.1 \
-    android.hardware.nfc@1.2 \
-    android.hardware.usb@1.0 \
-    android.hardware.usb@1.1 \
-    android.hardware.wifi@1.1 \
-    android.hardware.wifi@1.2 \
-    android.hardware.wifi@1.3 \
-    android.hardware.wifi@1.4 \
-    android.hardware.wifi@1.5 \
-    android.system.wifi.keystore@1.0 \
-    ese_client \
-    ese_spi_nxp \
-    hal_libnfc \
-    lib_android_keymaster_keymint_utils \
+    lib_android_keymaster_keymint_utils_rmx3511 \
     libaiactiver \
     libaiactiver_core \
-    libbinderdebug \
     libc++_shared \
-    libchrome \
-    libcppbor_external \
-    libcppcose_rkp \
+    libcppbor_external_rmx3511 \
+    libcppcose_rkp_rmx3511 \
+    libengbt \
     libfprint-x64 \
+    libhwc2onfbadapter \
     libkernelbootcp.trusty \
-    libkeymaster_messages \
-    libkeymaster_portable \
-    libkeymint \
+    libkeymaster_messages_rmx3511 \
+    libkeymaster_portable_rmx3511 \
+    libkeymint_rmx3511 \
     libkeystore-engine-wifi-hidl \
     libkeystore-wifi-hidl \
     libliom \
-    libpuresoftkeymasterdevice \
+    libpuresoftkeymasterdevice_rmx3511 \
     libremosaiclib \
     librmsclib1 \
-    libsoft_attestation_cert \
-    libz_stable \
-    nfc_nci_nxp \
+    libsoft_attestation_cert_rmx3511 \
     power.sprd \
-    vendor.nxp.eventprocessor@1.0 \
-    vendor.nxp.nxpese@1.0 \
-    vendor.nxp.nxpnfc@2.0 \
-    vendor.nxp.nxpnfclegacy@1.0 \
     vendor.sprd.hardware.ai_engine@1.0 \
     vendor.sprd.hardware.commondcs@1.0 \
     vendor.sprd.hardware.performance@1.0 \
     MultiuserOverlays \
     ProxyNFwLocation \
-    android.hardware.biometrics.fingerprint@2.1-service.xml \
     android.hardware.gatekeeper@1.0-service.trusty.xml \
+    android.hardware.security.keymint@1.0-unisoc.service.xml \
     android.hardware.sensors@1.0.xml \
-    android.hardware.thermal@2.0-service.xml \
     android.hardware.wifi@1.0-service.xml \
+    lights.xml \
     manifest_android.hardware.drm@1.4-service.clearkey.xml \
     manifest_android.hardware.drm@1.4-service.widevine.xml \
+    manifest_dualsim.xml \
+    manifest_mdt.xml \
+    manifest_media_c2_V1_1_unisoc.xml \
     manifest_oplus_performance.xml \
+    manifest_trusty.xml \
+    memtrack.xml \
     vendor-power-default.xml \
+    vendor.sprd.hardware.commondcs@1.0-service.xml \
     vendor.sprd.hardware.fingerprintmmi@1.0-service.xml \
     vendor.sprd.hardware.gnss@2.2-service.xml \
+    vendor.sprd.hardware.oemlock@1.0-service.xml \
     vendor.sprd.hardware.thermal@2.0-service.xml \
     vibrator.xml \
     AudioTest \
@@ -1021,9 +940,7 @@ PRODUCT_PACKAGES += \
     YMTC_32GB_YMUS6A4TB1A2C1_FW3.2_FFU.bin \
     YMTC_64GB_YMUS7A4TB2A2C1_FW3.2_FFU.bin \
     aiactiver_testbench \
-    applypatch \
     audiodumpclient \
-    boringssl_self_test64 \
     btools \
     charge \
     charged \
@@ -1040,16 +957,16 @@ PRODUCT_PACKAGES += \
     android.hardware.biometrics.fingerprint@2.1-service \
     android.hardware.bluetooth@1.1-service.unisoc \
     android.hardware.camera.provider@2.4-service \
+    android.hardware.cas@1.2-service \
     android.hardware.drm@1.4-service.widevine \
     android.hardware.gatekeeper@1.0-service.trusty \
     android.hardware.graphics.allocator@4.0-service \
     android.hardware.graphics.composer@2.1-service \
     android.hardware.media.c2@1.1-unisoc-service \
-    android.hardware.nfc@1.2-service \
-    android.hardware.power.stats-service.example \
-    android.hardware.rebootescrow-service.default \
+    android.hardware.media.omx@1.0-service \
     android.hardware.security.keymint@1.0-unisoc.service \
     android.hardware.sensors@1.0-service \
+    android.hardware.usb@1.1-service_rmx3511 \
     android.hardware.wifi@1.0-service \
     urild \
     vendor.sprd.hardware.ai_engine@1.0-service \
@@ -1079,40 +996,6 @@ PRODUCT_PACKAGES += \
     modem_ctrl_dbg \
     nvmerge \
     phasecheckserver \
-    readme \
-    readme \
-    fix_cpu_freq \
-    readme \
-    readme \
-    lit_cpu_freq \
-    readme \
-    cpu_loading \
-    readme \
-    cpu_trans_table \
-    readme \
-    readme \
-    ddr_bm \
-    fix_ddr_freq \
-    readme \
-    ddr_loading \
-    readme \
-    ddr_trans_table \
-    readme \
-    readme \
-    fix_gpu_freq \
-    readme \
-    gpu_loading \
-    readme \
-    gpu_trans_table \
-    readme \
-    interrupt \
-    readme \
-    readme \
-    readme \
-    paras \
-    readme \
-    tops \
-    readme \
     refnotify \
     remosaic_daemon \
     rpmbserver \
@@ -1122,10 +1005,6 @@ PRODUCT_PACKAGES += \
     systemDebuggerd \
     tee_rpc \
     thermald \
-    tinycap \
-    tinymix \
-    tinyplay \
     tsupplicant \
-    uclampset \
     uniber \
     wifisar_realme
