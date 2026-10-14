@@ -791,6 +791,7 @@ PRODUCT_PACKAGES += \
     libteec \
     libteecPlatform \
     libteeproduction \
+    libtensorflowlite_c_rmx3511 \
     libtinycompress \
     libtrustyHalHelper \
     libumnn \

@@ -2385,6 +2385,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/hw/unisoc.bootctrl.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "vendor.sprd.hardware.boot@1.2",
                 "android.hardware.boot@1.2",
                 "android.hardware.boot@1.1",
@@ -2403,6 +2404,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib64/hw/unisoc.bootctrl.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "vendor.sprd.hardware.boot@1.2",
                 "android.hardware.boot@1.2",
                 "android.hardware.boot@1.1",
@@ -12047,6 +12049,45 @@ cc_prebuilt_library_shared {
 }
 
 cc_prebuilt_library_shared {
+    name: "libtensorflowlite_c_rmx3511",
+    owner: "realme",
+    strip: {
+        none: true,
+    },
+    target: {
+        android_arm: {
+            srcs: [
+                "proprietary/vendor/lib/libtensorflowlite_c_rmx3511.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libEGL",
+                "libGLESv3",
+                "libdl",
+                "liblog",
+                "libc",
+            ],
+        },
+        android_arm64: {
+            srcs: [
+                "proprietary/vendor/lib64/libtensorflowlite_c_rmx3511.so",
+            ],
+            shared_libs: [
+                "libm",
+                "libEGL",
+                "libGLESv3",
+                "libdl",
+                "liblog",
+                "libc",
+            ],
+        },
+    },
+    compile_multilib: "both",
+    prefer: true,
+    soc_specific: true,
+}
+
+cc_prebuilt_library_shared {
     name: "libtinycompress",
     owner: "realme",
     strip: {
@@ -12186,7 +12227,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libcutils",
                 "libMNN",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_rmx3511",
                 "libdl",
                 "libm",
                 "libc",
@@ -12203,7 +12244,7 @@ cc_prebuilt_library_shared {
                 "libbinder",
                 "libcutils",
                 "libMNN",
-                "libtensorflowlite_c",
+                "libtensorflowlite_c_rmx3511",
                 "libdl",
                 "libm",
                 "libc",
@@ -14016,6 +14057,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/libavservices_minijail_vendor.so",
             ],
             shared_libs: [
+                "libbase_shim",
                 "libbase",
                 "libminijail",
                 "libc++",
@@ -15458,6 +15500,7 @@ cc_prebuilt_library_shared {
                 "proprietary/vendor/lib/soundfx/libdirac.so",
             ],
             shared_libs: [
+                "libaeabi_shim_rmx3511",
                 "libcutils",
                 "libDiracAPI_SHARED",
                 "liblog",
@@ -17354,6 +17397,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/hw/vendor.sprd.hardware.broadcastradio@2.0-service",
             ],
             shared_libs: [
+                "libbase_shim",
                 "liblog",
                 "libbase",
                 "libhardware",
@@ -18293,6 +18337,7 @@ cc_prebuilt_binary {
                 "proprietary/vendor/bin/systemDebuggerd",
             ],
             shared_libs: [
+                "libbase_shim",
                 "liblog",
                 "libbase",
                 "libcutils",
