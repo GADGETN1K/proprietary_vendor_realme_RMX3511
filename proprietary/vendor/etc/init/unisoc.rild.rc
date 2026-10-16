@@ -1,4 +1,5 @@
 service vendor.ril-daemon /vendor/bin/hw/urild
+    override
     class core
     user radio
     group radio cache inet misc audio log readproc wakelock sdcard_rw shell system dhcp

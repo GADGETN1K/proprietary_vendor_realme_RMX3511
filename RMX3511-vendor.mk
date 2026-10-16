@@ -6,6 +6,8 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/realme/RMX3511
 
 PRODUCT_COPY_FILES += \
+    vendor/realme/RMX3511/proprietary/system_ext/etc/init/ext_data.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/ext_data.rc \
+    vendor/realme/RMX3511/proprietary/system_ext/etc/init/ext_data_init_values.rc:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/init/ext_data_init_values.rc \
     vendor/realme/RMX3511/proprietary/vendor/build_BA_3501.prop:$(TARGET_COPY_OUT_VENDOR)/build_BA_3501.prop \
     vendor/realme/RMX3511/proprietary/vendor/build_BA_3506.prop:$(TARGET_COPY_OUT_VENDOR)/build_BA_3506.prop \
     vendor/realme/RMX3511/proprietary/vendor/build_BA_3511.prop:$(TARGET_COPY_OUT_VENDOR)/build_BA_3511.prop \
@@ -79,7 +81,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio/sku_sprd/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio/sku_sprd/usb_audio_policy_configuration.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_config.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_config.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    vendor/realme/RMX3511/proprietary/vendor/etc/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_pga.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_pga.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_process.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_process.xml \
     vendor/realme/RMX3511/proprietary/vendor/etc/audio_params/sprd/audio_structure.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_params/sprd/audio_structure.xml \
@@ -172,7 +173,6 @@ PRODUCT_COPY_FILES += \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/thermald.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/thermald.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/tsupplicant.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/tsupplicant.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/unisoc.rild.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/unisoc.rild.rc \
-    vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor-power-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor-power-default.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor.sprd.hardware.ai_engine@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.ai_engine@1.0-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor.sprd.hardware.aprd@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.aprd@1.0-service.rc \
     vendor/realme/RMX3511/proprietary/vendor/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sprd.hardware.broadcastradio@2.0-service.rc \
@@ -563,6 +563,7 @@ PRODUCT_PACKAGES += \
     memtrack.ums9230 \
     microarray.fingerprint.default \
     sensors.ums9230 \
+    thermal.ums9230_nico \
     unisoc.bootctrl \
     vendor.sprd.hardware.aprd@1.0-impl \
     vendor.sprd.hardware.connmgr@1.0-impl \
@@ -909,6 +910,8 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.ai_engine@1.0 \
     vendor.sprd.hardware.commondcs@1.0 \
     vendor.sprd.hardware.performance@1.0 \
+    libimsbrd \
+    libsrmi \
     MultiuserOverlays \
     ProxyNFwLocation \
     android.hardware.gatekeeper@1.0-service.trusty.xml \
@@ -924,7 +927,6 @@ PRODUCT_PACKAGES += \
     manifest_oplus_performance.xml \
     manifest_trusty.xml \
     memtrack.xml \
-    vendor-power-default.xml \
     vendor.sprd.hardware.commondcs@1.0-service.xml \
     vendor.sprd.hardware.fingerprintmmi@1.0-service.xml \
     vendor.sprd.hardware.gnss@2.2-service.xml \
@@ -985,7 +987,6 @@ PRODUCT_PACKAGES += \
     vendor.sprd.hardware.trusty@1.0-service \
     vendor.sprd.hardware.vibrator-service \
     vendor.sprd.hardware.wcn@1.0-service \
-    vendor.unisoc.hardware.power-service \
     idlestat \
     iwnpi \
     keymaster_ready \
@@ -1004,4 +1005,6 @@ PRODUCT_PACKAGES += \
     thermald \
     tsupplicant \
     uniber \
-    wifisar_realme
+    wifisar_realme \
+    ext_data \
+    ext_data_init_values
